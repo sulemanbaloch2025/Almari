@@ -1,0 +1,39 @@
+.cat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 0px; 
+    font-family: 'Times New Roman',
+
+
+
+
+}
+
+.category {
+    display: inline-block;
+    padding: 1px 12px;/* Adjust padding as needed */
+    margin: 10px;
+    background-color: black; /* Primary color, can be adjusted */
+    color: white;
+    border-radius: 0; /* Changed to 0 for rectangular corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Times New Roman',
+
+    
+}
+
+.category:hover {
+    background-color: white;
+    color:black /* Darker shade for hover effect */
+}
+
+/* Existing styles */
+
+.category.selected, .category:active {
+    background-color: #8b6914; /* A different, noticeable color for selected categories */
+}
+
+/* Keep the rest of your CSS unchanged */

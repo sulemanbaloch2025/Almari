@@ -1,0 +1,99 @@
+.card {
+    width: 280px;
+    margin: 0 8px 16px;  /* Adjust horizontal and vertical spacing */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    text-align: center;
+    position: relative;
+}
+  .new {
+    font-family: 'Times New Roman';
+    
+  }
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left; /* Aligns items horizontally and centers them */
+}
+  .quicklook {
+    display: none;
+    position: absolute;
+    bottom: 235px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  .card:hover .quicklook {
+    display: block; /* Show the quicklook div when hovering over the card */
+  }
+  
+  .card img {
+    width: 100%; /* Image takes full width of the card */
+    display: block; /* Removes bottom space under the image */
+  }
+  
+  .card h3 {
+    font-size: 18px; /* Smaller font size */
+    margin: 12px 0 4px; /* Adjust spacing */
+    color: #222222; /* Dark text color */
+  }
+  
+  .card p {
+    font-size: 16px; /* Adjusted font size for description */
+    color: #666666; /* Lighter text color for the description */
+    margin: 0 0 16px; /* Adjust spacing */
+  }
+.icons {
+    font-size: 32px;
+    height: 32px;
+    width: 32px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.icons:hover {
+    color: red;
+}
+
+.icon-con {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    padding: 7px;
+    background-color: #fff;
+    margin: 7px;
+}
+
+.links {
+    text-decoration: none;
+    font-size: 24px;
+    color: #002f34;
+    font-weight: bold;
+}
+
+.price-text {
+    color: #002f34;
+
+}
+
+.clear-btn {
+    height: 24px;
+    background-color: #002f34;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    padding: 0px 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
